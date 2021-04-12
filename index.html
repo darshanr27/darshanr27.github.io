@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <title>Darshan R | Portfolio</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,15 @@
     <!-- CSS files -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/skins/pink.css" type="text/css">
-    <title>Darshan R | Portfolio</title>
+
+    <!-- Live style switcher -->
+    <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled>
+    <link rel="stylesheet" href="css/styleswitcher.css" type="text/css">
+
 </head>
 
 <body>
@@ -325,6 +334,47 @@
         <!-- Main content  end-->
     </div>
     <!-- Main container end-->
+
+    <!-- Live style switcher -->
+    <div class="style-switcher">
+        <div class="toggle-style-switcher">
+            <i class="fa fa-cog fa-spin"></i>
+        </div>
+        <!-- Theme color changer -->
+        <h5>Style Switcher</h5>
+        <ul>
+            <li><a href="javascript:void(0)" title="pink" style="background-color: #ec1839"
+                    onclick="setActiveStyle('pink')"></a></li>
+            <li><a href="javascript:void(0)" title="blue" style="background-color: #2196F3"
+                    onclick="setActiveStyle('blue')"></a></li>
+            <li><a href="javascript:void(0)" title="orange" style="background-color: #fa5b0f"
+                    onclick="setActiveStyle('orange')"></a>
+            </li>
+            <li><a href="javascript:void(0)" title="yellow" style="background-color: #ffb400"
+                    onclick="setActiveStyle('yellow')"></a>
+            </li>
+            <li><a href="javascript:void(0)" title="green" style="background-color: #72b626"
+                    onclick="setActiveStyle('green')"></a></li>
+
+        </ul>
+        <!-- Theme color changer end -->
+
+        <!-- Dark mode and light mode  -->
+        <h5>Body Skin</h5>
+        <label>
+            <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
+            Light
+        </label>
+        <label>
+            <input type="radio" class="body-skin" name="body-style" value="dark">
+            Dark
+        </label>
+        <!-- Dark mode and light mode end -->
+
+    </div>
+    <!-- Live style switcher end -->
+    <!-- Live style JS  -->
+    <script src="js/styleswitcher.js"></script>
 </body>
 
 </html>
